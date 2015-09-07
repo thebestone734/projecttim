@@ -1,0 +1,138 @@
+.cssmenu,
+.cssmenu ul,
+.cssmenu li,
+.cssmenu a {
+  border: none;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  list-style: inside none;
+}
+
+/* Ustawienia klasy menu */
+.cssmenu {
+  height: 37px;
+  display: block;
+  border: 1px solid;
+  border-radius: 5px;
+  width: auto;
+  border-color: #080808;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.cssmenu > li {
+  float: left;
+  display: inline-block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.cssmenu > li > a {
+  outline: none;
+  display: block;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
+  font-weight: 700;
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-right: 1px solid #080808;
+  color: #ffffff;
+  padding: 12px 20px;
+}
+
+.cssmenu li.has-child > a:hover {
+  background: DarkSlateBlue;
+  border-color: #080808;
+}
+
+.cssmenu li.has-child:hover  > ul {
+  display: block;
+}
+
+.cssmenu li.has-child:hover > a:after {
+  top: 0;
+  bottom: 0;
+}
+
+.cssmenu > li.has-child > a:before {
+  content: "";
+  position: absolute;
+  top: 18px;
+  right: 4px;
+  border: 5px solid transparent;
+  border-top: 5px solid #ffffff;
+}
+
+
+
+.cssmenu li > ul li a {
+  outline: none;
+  display: block;
+  position: relative;
+  font: 10pt Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+  margin: 0;
+  padding: 8px 20px;
+}
+
+.cssmenu li > ul {
+  display: none;
+  width: 200px;
+  position: absolute;
+  top: 38px;
+  background: DarkSlateBlue;
+  border-radius: 0 0 5px 5px;
+  z-index: 999;
+  padding: 10px 0;
+}
+
+.cssmenu > li.has-child > ul > li:hover > ul {
+	display: block;
+}
+.cssmenu ul ul {
+  position: absolute;
+}
+
+.cssmenu ul li:hover > ul {
+  left: 100%;
+  top: -10px;
+  border-radius: 5px;
+}
+
+.cssmenu li > ul li {
+  display: block;
+  list-style: inside none;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+.cssmenu li > ul li a {
+  outline: none;
+  display: block;
+  position: relative;
+  font: 10pt Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  text-decoration: none;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+  margin: 0;
+  padding: 8px 20px;
+}
+
+.cssmenu,
+.cssmenu li > a:hover {
+  background: DarkSlateBlue;
+  background: -moz-linear-gradient(top, DarkSlateBlue 0%, MediumSlateBlue 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, DarkSlateBlue), color-stop(100%, MediumSlateBlue));
+  background: -webkit-linear-gradient(top, DarkSlateBlue 0%, MediumSlateBlue 100%);
+  background: -o-linear-gradient(top, DarkSlateBlue 0%, MediumSlateBlue 100%);
+  background: -ms-linear-gradient(top, DarkSlateBlue 0%, MediumSlateBlue 100%);
+  background: linear-gradient(top, DarkSlateBlue 0%, MediumSlateBlue 100%);
+}
