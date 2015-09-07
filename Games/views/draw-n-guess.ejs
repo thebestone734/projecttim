@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Drawing game client</title>
+		<link href='http://fonts.googleapis.com/css?family=Cabin+Sketch:bold' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="stylesheets/default.css" type="text/css" />
+	</head>
+	<body>
+		<section id="game">
+			<header>
+				<h1>Drawing game client using hmtl5</h1>
+			</header>
+		
+			<canvas id="drawing-pad" width="500" height="400">
+				Your browser doesn't support html5 canvas.
+			</canvas>
+			
+			<span>Chat or Guess: </span>
+			<input type='text' id="chat-input">
+			<input type='button' value="Send" id="send">
+			<input type='button' value="Restart" id="restart">
+			<ul id="chat-history"></ul>
+		</section>
+		<footer></footer>
+		<script src="jquery-1.11.3.min.js"></script>
+		<script src="html5games.websockets.js"></script>
+	</body>
+</html>
